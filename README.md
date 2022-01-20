@@ -1,4 +1,6 @@
-# This
+# Project Info
+- This was a code challenge project done with react.js.
+- Visit: https://code-challenge-reactjs.vercel.app/
 <html>
 
 <body>
