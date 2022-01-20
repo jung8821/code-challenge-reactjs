@@ -1,6 +1,7 @@
 # Project Info
 - This was a code challenge project done with react.js.
 - Visit: https://code-challenge-reactjs.vercel.app/
+- Link to Vue.js version: https://github.com/jung8821/code-challenge-vue-2/tree/master/client
 <html>
 
 <body>
