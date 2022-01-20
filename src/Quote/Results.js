@@ -72,15 +72,6 @@ const FilterOption = (props) => {
     return (
         <div className='filter_container'>
             <div>
-                <select defaultValue='0' className='input_box' onChange={handleFilterChange('policyMax')}>
-                    <option value="0">Any Policy Max</option>
-                    <option value="50">50,000</option>
-                    <option value="100">100,000</option>
-                    <option value="250">250,000</option>
-                    <option value="500">500,000</option>
-                </select>
-            </div>
-            <div>
                 <input type="checkbox" checked={filter.bestSeller} onChange={handleBestSeller}></input>
                 <label> BestSeller</label>
             </div>

@@ -91,7 +91,7 @@ function Form () {
     // Header with company logo
     const topHeader = (
         <div className='topHeader'>
-            <img className='logo' src="/images/Insubuy_Logo.png" alt='logo'></img>
+            <img className='logo' src="/images/logo.png" alt='logo'></img>
             <span className='header'>Travel Insurance</span>
         </div>
         
