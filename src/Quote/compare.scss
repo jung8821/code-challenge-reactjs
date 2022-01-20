@@ -1,0 +1,93 @@
+@import "./global.scss";
+.compare-page{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    button{
+        width: 40%;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 5px;
+        border-width: 1px;
+        background-color: rgba(191, 191, 216, 0.363);
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgb(191, 191, 216);
+        }
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .head {
+            color: rgba(44, 98, 199, 0.849);
+            text-decoration: underline;
+        }
+        
+        .wrapper{
+            display: table;
+            border-width: 1px;
+            border-color: $borderColor;
+            border-collapse: collapse;
+
+            .no_border{
+                border-width: 1px;
+                border-style: solid;
+                border-color: white;
+                border-bottom-color: $borderColor;
+            
+                
+            }
+            .desc{
+                border-top: 1px;
+                border-color: $borderColor;
+            }
+            th, td{
+                border-width: 0px;
+                border-style: solid;
+                padding: 5px;
+                width: 250px;
+                height: 100px;
+            }
+            .quoteName{
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+
+                &.one{
+                    background-color: rgba(78, 60, 141, 0.637);
+                }
+                &.two{
+                    background-color: rgba(255, 72, 0, 0.582);
+                }
+                &.three{
+                    background-color: rgb(85, 163, 48);
+                }
+                &.four{
+                    background-color: rgb(128, 9, 9);
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .compare-page{
+        .container{
+            .wrapper{
+                font-size: 2vw;
+                .quoteName{
+                    font-size: 10px;
+                }
+            }
+         
+        }
+    }
+}
