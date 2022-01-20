@@ -172,21 +172,6 @@
     Design is on you.
   </p>
   <hr/>
-  <p id="extraCredit">
-  <h2>Extra credit</h2>
-  <ul>
-  <li>
-    You can use any framework of your choice.
-  </li>
-  <li>
-    Bonus points for minimal use of external libraries.
-  </li>
-  <li>
-    Bonus points for using Vue2.js ( We use Vue2.js ).
-  </li>
-  <li>
-    Bonus points for clean indented and well commented code.
-  </li>
 </ul>
 
 
