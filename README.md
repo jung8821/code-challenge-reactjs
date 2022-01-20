@@ -3,7 +3,7 @@
 
 <body>
 <div class="header">
-  <h1>Insubuy code challenge</h1>
+  <h1>Code Challenge In React.js</h1>
 </div>
 
 <div class="rules">
