@@ -25,8 +25,9 @@ function Form () {
         mailingState: '',
         error: {},
         submitted: false,
+        isLoading: false,
     })
-    const {policyMax, age, citizenShip, mailingState, error, submitted} = state;
+    const {policyMax, age, citizenShip, mailingState, error, submitted, isLoading} = state;
 
     // Handle input change
     const handleChange = target => e => {
@@ -47,6 +48,7 @@ function Form () {
     }
     // Post data to api after input validation
     const sendForm = async () => {
+        setState({...state, isLoading: true});
         try {
             const response = await axios.post(process.env.REACT_APP_BACK_API_URL + process.env.REACT_APP_BACK_API_QUOTE, {
                 startDate,
@@ -179,7 +181,11 @@ function Form () {
                         type="text" placeholder='Choose State' pattern="[A-Za-z]*" required></input>
                 </span>
                 <span className='get_quotes'>
-                    <button>GET QUOTES </button>
+                    {isLoading
+                        ? <button className='loader'> </button>
+                        : <button >GET QUOTES </button>
+                    }
+                    
                 </span>
                 <span className='reset_form'>
                     <span onClick={resetForm} >Reset Form</span>
