@@ -31,11 +31,6 @@
         Compare Modal
       </a>
     </li>
-    <li>
-      <a href="#extraCredit">
-        Extra Credit
-      </a>
-    </li>
   </ul>
   <p>
     This challenge is intended to test your comfort with architecting components and managing
@@ -74,9 +69,6 @@
     <li>Ability to recreate the mockup to likeness</li>
   </ul>
 
-  <h3>Please branch out from the master branch like this {firstName-LastName}. Make sure you make frequent meaningful commits on your branch.
-  Once you are ready to submit the code please send us a link to your github branch by replying to the email. You can reach out to us on the email if you
-  have any questions about the challenge.</h3>
   <h3>Scaffolding The Project</h3>
   <p>
     The front end implementation of this project has two options. The first is using the existing structure and integrating your front end with it
