@@ -6,7 +6,6 @@ import Compare from './Quote/Compare';
 
 /* 
 * Coded by: Tae Jung
-* My portfolio website: https://www.taekjung.com
 *
 */
 

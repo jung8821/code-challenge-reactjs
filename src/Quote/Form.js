@@ -58,8 +58,8 @@ function Form () {
                 age,
                 mailingState
             });
-            console.log(response.data);
-            navigate('/results');
+            console.log(response.data.quotes);
+            navigate('/results', {state: response.data.quotes});
         } catch (err) {
             console.log(err)
         }

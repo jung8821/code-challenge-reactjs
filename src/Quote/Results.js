@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import './results.scss'
 
 // Sort Data
@@ -211,8 +211,9 @@ const PlanContainer = (props) => {
 
 /*--------Main Results Page--------*/
 export default function Results() {
+    const location = useLocation();
     // States
-    const [data, setData] = useState([]); // quotes
+    const [data, setData] = useState(location.state || []); // quotes
     const [sortType, setSortType] = useState('sort'); // Sort by name, age, price
     const [viewType, setViewType] = useState('list'); // List or Grid View
     const [filter, setFilter] = useState({
@@ -250,9 +251,9 @@ export default function Results() {
 
     // Pull initial data from the server
     useEffect(() => {
-        handleGetData();
+        if (!data.length) handleGetData();
 
-    }, [])
+    }, [data])
 
     return (
         <div>
